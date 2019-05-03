@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/newcontenttypes",
+      "handler": "Newcontenttype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newcontenttypes/count",
+      "handler": "Newcontenttype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newcontenttypes/:_id",
+      "handler": "Newcontenttype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/newcontenttypes",
+      "handler": "Newcontenttype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/newcontenttypes/:_id",
+      "handler": "Newcontenttype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/newcontenttypes/:_id",
+      "handler": "Newcontenttype.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

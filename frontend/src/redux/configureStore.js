@@ -9,7 +9,7 @@ import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
 import createRootReducer from './rootReducer'
 
 const persistConfig = {
-	key: 'react-strapi-starter',
+	key: 'awesome-site',
 	storage,
 	stateReconciler: autoMergeLevel2,
 }
