@@ -13,7 +13,7 @@ export const updateArts = () => (dispatch, getState) => {
 		type: ActionTypes.UPDATE_ARTS,
 		promise: TechnologyService.getAll(),
 		meta: {
-			onFailure: (e) => logger('Error updating technologies', e)
+			onFailure: (e) => logger('Error updating arts', e)
 		}
 	})
 }

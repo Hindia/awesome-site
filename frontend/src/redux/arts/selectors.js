@@ -3,11 +3,11 @@ import config from '../../config';
 
 const UPDATE_INTERVAL = config.IS_DEV ? 15 * 1000 : 10 * 60 * 1000; // 15 seconds (debug/development) / 10 minutes (production)
 
-export const arts = state => state.arts.data;
+export const arts = state => state.technologies.data;
 export const artsMeta = state => ({
-	loading: state.arts.loading,
-	error: state.arts.error,
-	lastUpdate: state.arts.lastUpdate
+	loading: state.technologies.loading,
+	error: state.technologies.error,
+	lastUpdate: state.technologies.lastUpdate
 })
 
 export const artsShouldUpdate = createSelector(
