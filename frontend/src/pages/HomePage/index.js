@@ -4,6 +4,7 @@ import './style.scss';
 import BasicSection from '../../components/BasicSection';
 import HeaderImage from '../../components/HeaderImage';
 import TechnologyGrid from '../../components/TechnologyGrid';
+import TestComponent from '../../components/TestComponent';
 import CenteredContent from '../../components/CenteredContent';
 import Divider from '../../components/Divider';
 import TEXT_KEYS from '../../redux/textfields/keys';
@@ -21,6 +22,7 @@ class HomePage extends PureComponent {
 				<Divider lg />
 				<CenteredContent>
 					<TechnologyGrid />
+					<TestComponent />
 				</CenteredContent>
 				<Divider lg />
 			</div>
