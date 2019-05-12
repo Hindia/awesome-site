@@ -5,10 +5,12 @@ import mediafields from './mediafields/reducer';
 import textfields from './textfields/reducer';
 import pages from './pages/reducer';
 import technologies from './technologies/reducer';
+import partners from './partners/reducer';
 
 export default () => combineReducers({
 	mediafields,
 	textfields,
 	pages,
 	technologies,
+	partners,
 });
