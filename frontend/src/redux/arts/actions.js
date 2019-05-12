@@ -11,7 +11,6 @@ export const updateArts = () => (dispatch, getState) => {
 
 	dispatch({
 		type: ActionTypes.UPDATE_ARTS,
-		promise: TechnologyService.getAll(),
 		meta: {
 			onFailure: (e) => logger('Error updating arts', e)
 		}

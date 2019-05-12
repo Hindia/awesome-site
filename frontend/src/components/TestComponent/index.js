@@ -27,7 +27,6 @@ class TestComponent extends PureComponent {
 		return map(arts, art => {
 			return (
 				<div className="TestComponent--item" key={art.name}>
-					<img className="TestComponent--item__logo" src={art.logo.url} alt={art.name} />
 				</div>
 			)
 		})
@@ -36,10 +35,7 @@ class TestComponent extends PureComponent {
 	render() {
 		return (
 			<div className="TestComponent">
-				<h3 className="TestComponent--title">Here's a few of the arts we love to use</h3>
-				<div className="TestComponent--items">
-					{this.renderArts()}
-				</div>
+
 			</div>
 		)
 	}
