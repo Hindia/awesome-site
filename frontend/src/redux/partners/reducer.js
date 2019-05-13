@@ -15,6 +15,7 @@ export default function reducer(state = initialState, action) {
         isLoading: true
       };
     case ActionTypes.UPDATE_PARTNERS_SUCCESS:
+      console.log('PARTNERS', action.payload);
       return {
         ...state,
         data: action.payload,
