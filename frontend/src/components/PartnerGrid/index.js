@@ -2,8 +2,10 @@ import React, { PureComponent } from 'react';
 import { PropTypes } from 'prop-types';
 import './style.scss';
 
+import { connect } from 'react-redux';
 import { map } from 'lodash-es';
 
+import { partners as selectPartners } from '../../redux/partners/selectors';
 import { updatePartners } from '../../redux/partners/actions';
 
 class PartnerGrid extends PureComponent {
@@ -26,7 +28,7 @@ class PartnerGrid extends PureComponent {
 			return (
 				<div className="PartnerGrid--item" key={partner.name}>
 					<img className="PartnerGrid--item__logo" src={partner.logo.url} alt={partner.name} />
-					<a href={partner.link}/>
+					<a href='{partner.link}'>partner website</a>
 				</div>
 			)
 		})

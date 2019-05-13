@@ -4,6 +4,7 @@ import './style.scss';
 import BasicSection from '../../components/BasicSection';
 import HeaderImage from '../../components/HeaderImage';
 import TechnologyGrid from '../../components/TechnologyGrid';
+import PartnerGrid from '../../components/PartnerGrid';
 import TestComponent from '../../components/TestComponent';
 import CenteredContent from '../../components/CenteredContent';
 import Divider from '../../components/Divider';
@@ -23,6 +24,7 @@ class HomePage extends PureComponent {
 				<CenteredContent>
 					<TechnologyGrid />
 					<TestComponent />
+					<PartnerGrid />
 				</CenteredContent>
 				<Divider lg />
 			</div>
