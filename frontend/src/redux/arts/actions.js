@@ -1,6 +1,5 @@
 import * as ActionTypes from './actionTypes';
 import { artsShouldUpdate } from './selectors';
-import TechnologyService from '../../services/technologies';
 import logger from '../../utils/logger';
 
 export const updateArts = () => (dispatch, getState) => {
