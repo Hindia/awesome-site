@@ -47,7 +47,7 @@ class PartnerGrid extends PureComponent {
 }
 
 const mapStateToProps = (state) => ({
-	partners: selectPartners(state),
+	partners: state.partners.data,
 })
 
 const mapDispatchToProps = (dispatch) => ({

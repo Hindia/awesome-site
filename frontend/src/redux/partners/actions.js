@@ -10,7 +10,10 @@ export const updatePartners = () => (dispatch, getState) => {
 		return;
 	}
 	else{
+
 	return PartnerService.getAll().then(partners => {
-      dispatch({ type: UPDATE_PARTNERS_SUCCESS, payload: partners });
-    }}
+      dispatch({ type: ActionTypes.UPDATE_PARTNERS_SUCCESS, payload: partners });
+      dispatch({type: ActionTypes.UPDATE_PARTNERS_STARTED});
+    })
+    }
   }
